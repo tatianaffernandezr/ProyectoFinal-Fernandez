@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sesiones,Terapias Alternativas, Holistico, Despertar">
+    <meta name="keywords" content="barras de access, terapias holisticas, reiki, usui, despertar, gemoterapia, meditacion, consciencia">
+    <link rel="icon" type="image/jpg" href="../imagenes-media/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Sesiones ● Ananda ●</title>
+</head>
+<body>
+   <header id="arriba">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a href="../index.html" class="navbar-brand"><img src="../imagenes-media/logo.png" alt="logo"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+   </header>
+   <main>
+        <h1 class="animate__animated animate__pulse">Sesiones Disponibles</h1>
+        <section>
+            <article>
+                <img src="../imagenes-media/reiki-usui.png">
+                <h2>Reiki Usui</h2>
+                <p>Esta palabra compuesta por dos vocablos significa energía universal (rei) y energía vital (ki). La técnica enseñada por Mikao Usui busca canalizar y transmitir energía vital a través de la imposición de manos, que sirve como terapia alternativa y complementaria de los tratamientos médicos</p>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+            <article>
+                <img src="../imagenes-media/karmic-reiki.png">
+                <h2>Karmic Reiki</h2>
+                <p>En esta sesion se canaliza energias especificas relacionadas con el Karma. Algunas veces revelan episodios de vidas anteriores. Se dice que todo lo que hacemos se refleja en nosotros de vuelta, a veces estas vibraciones son enviadas a través del Aura. Si no cortamos el ciclo karmatico, estas “deudas” continuarán el campo áurico que obtenemos al nacer.</p>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+            <article>
+                <img src="../imagenes-media/barras-access.png">
+                <h2>Barras de Access</h2>
+                <p>Las Barras de Access es una técnica de aplicación manual que consigue, mediante unos suaves toques en ciertos puntos específicos de la cabeza, que las ondas cerebrales cambien pasando de onda Beta (estado de vigilia) a onda Theta o Delta (estados de relajación profunda)</p>
+                <small>*Solo presencial</small>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="../imagenes-media/gemoterapia.png">
+                <h2>Gemoterapia</h2>
+                <p>La gemoterapia es la aplicación terapeútica de piedras y cristales con propiedades para encontrar el equilibrio y la relajación, además de regenerar la mente y el cuerpo.</p>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+            <article>
+                <img src="../imagenes-media/meditacion.png">
+                <h2>Meditación</h2>
+                <p>Esta sesion nos permiten conectar con el aquí y ahora. Es un estado de presencia pura. Para meditar nos enfocamos en la respiracion, postura y espacio. Cada experiencia es única. Cada persona tiene su tiempo. Es una herramienta maravillosa para ayudarnos a enfocar, a tomar las cosas con mas tranquilidad.</p>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+            <article>
+                <img src="../imagenes-media/registros-akashicos.png">
+                <h2>Registros Akashicos</h2>
+                <p>En el Akasha está registrada la historia del planeta, la historia personal de cada uno, el propósito en la Vida, el programa de nuestro destino futuro, de ahí el nombre de Registro Akáshico o Registro del Alma. Son los archivos y las matrices de todo lo ocurrido en el Universo. Son impresiones en el plano astral como un legajo de las vidas pasadas.</p>
+                <button type="button" onclick="agregar" class="clickearAqui">Reservar</button>
+            </article>
+            <div>
+              <ul id="carrito">
+                <!--Lista del carrito-->>
+              </ul>
+              <h5 id="totalPagar"></h5>
+              <button>Añadir cuenta Bancaria</button>
+            </div>
+        </section>
+   </main>
+   <footer>
+      <div class="card text-center">
+        <div class="card-header">
+          Ananda - terapias Holísticas
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">☎ +54 11 66073448</h5>
+          <p class="card-text">✉ info.anandaterapias@gmail.com</p>
+          <button type="button" class="btn btn-outline-secondary"><a href="#arriba">Volver Arriba</a></button>
+          <button type="button" class="btn btn-outline-secondary"><a href="../index.html">Volver a Inicio</a></button>
+        <div class="card-footer text-body-secondary">
+            Gracias por visitarnos ♥ Tati & Xime
+        </div>
+      </div>
+   </footer>
+   <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/*variable de colores*/
+* {
+  margin: "0";
+  padding: "0";
+  font-family: Rajdhani;
+  background-color: #fcf6bd;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 8px;
+}
+
+div iframe {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: dashed 5px;
+  margin: 40px 243px;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  /*abreviado*/
+  justify-content: center;
+  align-items: baseline;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+}
+
+.grid-item {
+  justify-self: start;
+}
+
+a:hover {
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ccffff;
+  color: #6d6875;
+}
+
+.acordeon {
+  background-color: #fcf6bd;
+}
+
+p {
+  text-align: center;
+}
+
+.imgPortada {
+  padding: 10px 5px;
+  border: 5px;
+  margin: 5px;
+}
+
+.whatsapp {
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  transition: all height 2s width 1s;
+}
+
+@media (max-width: 576px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  div iframe {
+    display: flex;
+    justify-self: auto;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
